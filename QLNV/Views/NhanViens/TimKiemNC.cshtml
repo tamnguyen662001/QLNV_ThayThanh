@@ -143,7 +143,7 @@
         grid.Column("TenNV","Tên nhân viên"),
         grid.Column("GioiTinh","Giới tính",format: (@item) => @item.GioiTinh==true?"Nam":"Nữ"),
         grid.Column("NgaySinh","Ngày sinh",format:@<text> @item.NgaySinh.ToString("dd/MM/yyyy")</text>),
-        grid.Column("Luong","Tiền lương",format:@<text> @item.Luong.ToString("#,##0")</text>),
+        grid.Column("Luong","Lương",format:@<text> @item.Luong.ToString("#,##0")</text>),
         grid.Column("DiaChi","Địa chỉ"),
         grid.Column("PhongBan.TenPB","Phòng ban"),
         grid.Column(format: (item) => Html.ActionLink("Cập nhật", "Edit", "NhanViens",new { id = item.MaNV },"NhanViensController")),
